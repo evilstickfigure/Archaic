@@ -21,7 +21,7 @@ public class generic_item extends Item {
     }
     @Override
     @OnlyIn(Dist.CLIENT)
-    public void addInformation(@Nonnull ItemStack itemstack, @Nullable World world, List<ITextComponent> list, ITooltipFlag tooltip){
+    public void addInformation(@Nonnull ItemStack itemstack, @Nullable World world, List<ITextComponent> list, @Nullable ITooltipFlag tooltip){
         list.add(new TranslationTextComponent(this.getTranslationKey() + ".desc").applyTextStyle(TextFormatting.LIGHT_PURPLE));
     }
 }

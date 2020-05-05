@@ -1,6 +1,7 @@
 package com.evilstickfigure.archaic;
 
 import com.evilstickfigure.archaic.block.generic_block;
+import com.evilstickfigure.archaic.item.archaic_atlas;
 import com.evilstickfigure.archaic.item.block.generic_block_item;
 import com.evilstickfigure.archaic.item.generic_item;
 import net.minecraft.block.Block;
@@ -22,4 +23,5 @@ public class RegistryHandler {
     public static final RegistryObject<Item> GENERIC_BLOCK_ITEM = ITEMS.register("generic_block", () -> new generic_block_item(GENERIC_BLOCK.get()));
     //Items
     public static final RegistryObject<Item> GENERIC_ITEM = ITEMS.register("generic_item", generic_item::new);
+    public static final RegistryObject<Item> ARCHAIC_ATLAS = ITEMS.register("archaic_atlas", archaic_atlas::new);
 }

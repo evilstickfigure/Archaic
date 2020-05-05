@@ -1,5 +1,6 @@
 {
   "item.archaic.generic_item": "Generic Item",
   "item.archaic.generic_item.desc": "Placeholder",
-  "block.archaic.generic_block": "Generic Block"
+  "block.archaic.generic_block": "Generic Block",
+  "item.archaic.archaic_atlas": "Archaic Atlas"
 }
