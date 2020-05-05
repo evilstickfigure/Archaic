@@ -29,6 +29,7 @@ public class Main
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
         RegistryHandler.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        RegistryHandler.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
