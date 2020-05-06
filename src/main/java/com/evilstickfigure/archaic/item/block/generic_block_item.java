@@ -6,7 +6,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 
 public class generic_block_item extends BlockItem {
-    public generic_block_item(Block block){
-        super(block,new Item.Properties().group(ItemGroup.SEARCH));
+
+    public generic_block_item(Block block) {
+        super(block, new Item.Properties().group(ItemGroup.SEARCH));
     }
+
 }

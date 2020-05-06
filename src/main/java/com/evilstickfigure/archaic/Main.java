@@ -20,8 +20,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Collectors;
 @Mod("archaic")
-public class Main
-{
+public class Main {
+
     public static final String MOD_ID = "archaic";
 
     public Main() {
