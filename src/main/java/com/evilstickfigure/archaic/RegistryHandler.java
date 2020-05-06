@@ -1,6 +1,7 @@
 package com.evilstickfigure.archaic;
 
 import com.evilstickfigure.archaic.block.generic_block;
+import com.evilstickfigure.archaic.item.ancient_alloy;
 import com.evilstickfigure.archaic.item.archaic_atlas;
 import com.evilstickfigure.archaic.item.block.generic_block_item;
 import com.evilstickfigure.archaic.item.generic_item;
@@ -23,6 +24,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> GENERIC_ITEM = ITEMS.register("generic_item", generic_item::new);
     public static final RegistryObject<Item> ARCHAIC_ATLAS = ITEMS.register("archaic_atlas", archaic_atlas::new);
     public static final RegistryObject<Item> WEATHERED_BATTLEAXE = ITEMS.register("weathered_battleaxe", weathered_battleaxe::new);
+    public static final RegistryObject<Item> ANCIENT_ALLOY = ITEMS.register("ancient_alloy", ancient_alloy::new);
 
     // Creative Tabs
     public static final ItemGroup ARCHAIC_COMBAT_TAB = new ItemGroup("archaic_combat_tab") {
@@ -31,5 +33,10 @@ public class RegistryHandler {
             return new ItemStack(WEATHERED_BATTLEAXE.get());
         }
     };
-
+    public static final ItemGroup ARCHAIC_GENERAL_TAB = new ItemGroup("archaic_general_tab") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ARCHAIC_ATLAS.get());
+        }
+    };
 }

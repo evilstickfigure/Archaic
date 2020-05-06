@@ -1,11 +1,14 @@
 {
   "item.archaic.generic_item": "Generic Item",
+  "item.archaic.generic_item.desc": "Placeholder",
+
   "item.archaic.archaic_atlas": "Archaic Atlas",
+  "item.archaic.ancient_alloy": "Ancient Alloy",
+
   "item.archaic.weathered_battleaxe": "Weathered Battleaxe",
 
   "block.archaic.generic_block": "Generic Block",
 
   "itemGroup.archaic_combat_tab": "Archaic Combat",
-
-  "item.archaic.generic_item.desc": "Placeholder"
+  "itemGroup.archaic_general_tab": "Archaic General"
 }
