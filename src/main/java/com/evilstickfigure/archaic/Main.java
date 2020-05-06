@@ -2,6 +2,8 @@ package com.evilstickfigure.archaic;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -32,13 +34,15 @@ public class Main
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
+    private void setup(final FMLCommonSetupEvent event) { }
 
-    }
+    private void doClientStuff(final FMLClientSetupEvent event) { }
 
-    private void doClientStuff(final FMLClientSetupEvent event) {
-
-    }
-
+    //Tabs
+    public static final ItemGroup ARCHAIC_COMBAT_TAB = new ItemGroup("archaic_combat_tab") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.WEATHERED_BATTLEAXE.get());
+        }
+    };
 }
