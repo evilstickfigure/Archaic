@@ -1,11 +1,8 @@
 package com.evilstickfigure.archaic;
 
 import com.evilstickfigure.archaic.block.generic_block;
-import com.evilstickfigure.archaic.item.ancient_alloy;
-import com.evilstickfigure.archaic.item.archaic_atlas;
+import com.evilstickfigure.archaic.item.*;
 import com.evilstickfigure.archaic.item.block.generic_block_item;
-import com.evilstickfigure.archaic.item.generic_item;
-import com.evilstickfigure.archaic.item.weathered_battleaxe;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
@@ -23,6 +20,7 @@ public class RegistryHandler {
     // Items
     public static final RegistryObject<Item> GENERIC_ITEM = ITEMS.register("generic_item", generic_item::new);
     public static final RegistryObject<Item> ARCHAIC_ATLAS = ITEMS.register("archaic_atlas", archaic_atlas::new);
+    public static final RegistryObject<Item> DUSTY_BOOK = ITEMS.register("dusty_book", dusty_book::new);
     public static final RegistryObject<Item> WEATHERED_BATTLEAXE = ITEMS.register("weathered_battleaxe", weathered_battleaxe::new);
     public static final RegistryObject<Item> ANCIENT_ALLOY = ITEMS.register("ancient_alloy", ancient_alloy::new);
 
