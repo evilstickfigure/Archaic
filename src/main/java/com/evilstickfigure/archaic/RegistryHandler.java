@@ -4,11 +4,13 @@ import com.evilstickfigure.archaic.block.generic_block;
 import com.evilstickfigure.archaic.item.archaic_atlas;
 import com.evilstickfigure.archaic.item.block.generic_block_item;
 import com.evilstickfigure.archaic.item.generic_item;
+import com.evilstickfigure.archaic.item.weathered_battleaxe;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Items;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,4 +26,5 @@ public class RegistryHandler {
     //Items
     public static final RegistryObject<Item> GENERIC_ITEM = ITEMS.register("generic_item", generic_item::new);
     public static final RegistryObject<Item> ARCHAIC_ATLAS = ITEMS.register("archaic_atlas", archaic_atlas::new);
+    public static final RegistryObject<Item> WEATHERED_BATTLEAXE = ITEMS.register("weathered_battleaxe", weathered_battleaxe::new);
 }
