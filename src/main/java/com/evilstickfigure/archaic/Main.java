@@ -38,11 +38,4 @@ public class Main {
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
 
-    //Tabs
-    public static final ItemGroup ARCHAIC_COMBAT_TAB = new ItemGroup("archaic_combat_tab") {
-        @Override
-        public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.WEATHERED_BATTLEAXE.get());
-        }
-    };
 }
